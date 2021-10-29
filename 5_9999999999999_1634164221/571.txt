@@ -1,0 +1,883 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.jeffrey.taylor@usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info,
+install abc, and on the command line use 'abc' > 'pdr --help'
+
+********************************************************************************
+
+5_9999999999999_1634164221/571.ivy: line 182: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1634231108.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1634231108.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1634231108.aig; pdr -qt -L aigerfiles/1634231108_pdr.log; write_aiger_cex  aigerfiles/1634231108.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1634231108.aig; pdr -qt -L aigerfiles/1634231108_pdr.log; write_aiger_cex  aigerfiles/1634231108.out".
+
+Output 0 of miter "aigerfiles/1634231108" was asserted in frame 16.  Time =    36.11 sec
+--------------------------------------------------------------------------------
+
+FAIL
+
+Counterexample trace follows...
+********************************************************************************
+
+Counterexample follows:
+--------------------------------------------------------------------------------
+err_flag := false
+
+5_9999999999999_1634164221/571.ivy: line 37: spec.s1 := 1:bv8
+
+[
+    spec.s1 = 1
+]
+5_9999999999999_1634164221/571.ivy: line 38: spec.s2 := 50:bv8
+
+[
+    spec.s2 = 50
+]
+5_9999999999999_1634164221/571.ivy: line 39: spec.s3 := 0:bv8
+
+[
+    spec.s3 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 40: spec.s4 := 1:bv8
+
+[
+    spec.s4 = 1
+]
+5_9999999999999_1634164221/571.ivy: line 41: spec.s5 := 50:bv8
+
+[
+    spec.s5 = 50
+]
+5_9999999999999_1634164221/571.ivy: line 42: spec.s6 := 0:bv8
+
+[
+    spec.s6 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 44: spec.r1 := 0:bv8
+
+[
+    spec.r1 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 45: spec.r2 := 0:bv8
+
+[
+    spec.r2 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 46: spec.r3 := 0:bv8
+
+[
+    spec.r3 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 47: spec.r4 := 0:bv8
+
+[
+    spec.r4 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 48: spec.r5 := 0:bv8
+
+[
+    spec.r5 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 49: spec.r6 := 0:bv8
+
+[
+    spec.r6 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 51: spec.q1 := 0:bv8
+
+[
+    spec.q1 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 52: spec.q2 := 0:bv8
+
+[
+    spec.q2 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 53: spec.q3 := 0:bv8
+
+[
+    spec.q3 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 54: spec.q4 := 0:bv8
+
+[
+    spec.q4 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 55: spec.q5 := 0:bv8
+
+[
+    spec.q5 = 0
+]
+5_9999999999999_1634164221/571.ivy: line 56: spec.q6 := 0:bv8
+
+[
+    spec.q6 = 0
+]
+__init := true
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 50
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 0
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 49
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 1
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 50
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 0
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 49
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 255
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 48
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 2
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 0
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 49
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 255
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 48
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 2
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 254
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 47
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 3
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_two
+
+{
+    5_9999999999999_1634164221/571.ivy: line 73: spec.q1 := spec.r1
+
+    5_9999999999999_1634164221/571.ivy: line 74: spec.q2 := spec.r2
+
+    5_9999999999999_1634164221/571.ivy: line 75: spec.q3 := spec.r3
+
+    5_9999999999999_1634164221/571.ivy: line 76: spec.r1 := spec.s1
+
+    [
+        spec.r1 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 77: spec.r2 := spec.s2
+
+    [
+        spec.r2 = 50
+    ]
+    5_9999999999999_1634164221/571.ivy: line 78: spec.r3 := spec.s3
+
+    5_9999999999999_1634164221/571.ivy: line 79: spec.s1 := spec.s1 + 1
+
+    [
+        spec.s1 = 2
+    ]
+    5_9999999999999_1634164221/571.ivy: line 80: spec.s2 := spec.s2 + 1
+
+    [
+        spec.s2 = 51
+    ]
+    5_9999999999999_1634164221/571.ivy: line 81: spec.s3 := spec.s3 - 1
+
+    [
+        spec.s3 = 255
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 255
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 48
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 2
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 254
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 47
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 3
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 253
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 46
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 4
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 254
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 47
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 3
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 253
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 46
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 4
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 252
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 45
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 5
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_one
+
+{
+    5_9999999999999_1634164221/571.ivy: line 61: spec.q1 := spec.r1
+
+    [
+        spec.q1 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 62: spec.q2 := spec.r2
+
+    [
+        spec.q2 = 50
+    ]
+    5_9999999999999_1634164221/571.ivy: line 63: spec.q3 := spec.r3
+
+    5_9999999999999_1634164221/571.ivy: line 64: spec.r1 := spec.s1
+
+    [
+        spec.r1 = 2
+    ]
+    5_9999999999999_1634164221/571.ivy: line 65: spec.r2 := spec.s2
+
+    [
+        spec.r2 = 51
+    ]
+    5_9999999999999_1634164221/571.ivy: line 66: spec.r3 := spec.s3
+
+    [
+        spec.r3 = 255
+    ]
+    5_9999999999999_1634164221/571.ivy: line 67: spec.s1 := spec.s1 - 1
+
+    [
+        spec.s1 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 68: spec.s2 := spec.s2 - 1
+
+    [
+        spec.s2 = 50
+    ]
+    5_9999999999999_1634164221/571.ivy: line 69: spec.s3 := spec.s3 + 1
+
+    [
+        spec.s3 = 0
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 253
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 46
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 4
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 252
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 45
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 5
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 251
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 44
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 6
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 252
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 45
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 5
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 251
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 44
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 6
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 250
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 43
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 7
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 251
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 44
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 6
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 250
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 43
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 7
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 249
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 42
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 8
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 250
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 43
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 7
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 249
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 42
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 8
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 248
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 41
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 9
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_one
+
+{
+    5_9999999999999_1634164221/571.ivy: line 61: spec.q1 := spec.r1
+
+    [
+        spec.q1 = 2
+    ]
+    5_9999999999999_1634164221/571.ivy: line 62: spec.q2 := spec.r2
+
+    [
+        spec.q2 = 51
+    ]
+    5_9999999999999_1634164221/571.ivy: line 63: spec.q3 := spec.r3
+
+    [
+        spec.q3 = 255
+    ]
+    5_9999999999999_1634164221/571.ivy: line 64: spec.r1 := spec.s1
+
+    [
+        spec.r1 = 1
+    ]
+    5_9999999999999_1634164221/571.ivy: line 65: spec.r2 := spec.s2
+
+    [
+        spec.r2 = 50
+    ]
+    5_9999999999999_1634164221/571.ivy: line 66: spec.r3 := spec.s3
+
+    [
+        spec.r3 = 0
+    ]
+    5_9999999999999_1634164221/571.ivy: line 67: spec.s1 := spec.s1 - 1
+
+    [
+        spec.s1 = 0
+    ]
+    5_9999999999999_1634164221/571.ivy: line 68: spec.s2 := spec.s2 - 1
+
+    [
+        spec.s2 = 49
+    ]
+    5_9999999999999_1634164221/571.ivy: line 69: spec.s3 := spec.s3 + 1
+
+    [
+        spec.s3 = 1
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 249
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 42
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 8
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 248
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 41
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 9
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 247
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 40
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 10
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_five
+
+{
+    5_9999999999999_1634164221/571.ivy: line 109: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 248
+    ]
+    5_9999999999999_1634164221/571.ivy: line 110: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 41
+    ]
+    5_9999999999999_1634164221/571.ivy: line 111: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 9
+    ]
+    5_9999999999999_1634164221/571.ivy: line 112: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 247
+    ]
+    5_9999999999999_1634164221/571.ivy: line 113: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 40
+    ]
+    5_9999999999999_1634164221/571.ivy: line 114: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 10
+    ]
+    5_9999999999999_1634164221/571.ivy: line 115: spec.s4 := spec.s4 + 1
+
+    [
+        spec.s4 = 248
+    ]
+    5_9999999999999_1634164221/571.ivy: line 116: spec.s5 := spec.s5 + 1
+
+    [
+        spec.s5 = 41
+    ]
+    5_9999999999999_1634164221/571.ivy: line 117: spec.s6 := spec.s6 - 1
+
+    [
+        spec.s6 = 9
+    ]
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    5_9999999999999_1634164221/571.ivy: line 97: spec.q4 := spec.r4
+
+    [
+        spec.q4 = 247
+    ]
+    5_9999999999999_1634164221/571.ivy: line 98: spec.q5 := spec.r5
+
+    [
+        spec.q5 = 40
+    ]
+    5_9999999999999_1634164221/571.ivy: line 99: spec.q6 := spec.r6
+
+    [
+        spec.q6 = 10
+    ]
+    5_9999999999999_1634164221/571.ivy: line 100: spec.r4 := spec.s4
+
+    [
+        spec.r4 = 248
+    ]
+    5_9999999999999_1634164221/571.ivy: line 101: spec.r5 := spec.s5
+
+    [
+        spec.r5 = 41
+    ]
+    5_9999999999999_1634164221/571.ivy: line 102: spec.r6 := spec.s6
+
+    [
+        spec.r6 = 9
+    ]
+    5_9999999999999_1634164221/571.ivy: line 103: spec.s4 := spec.s4 - 1
+
+    [
+        spec.s4 = 247
+    ]
+    5_9999999999999_1634164221/571.ivy: line 104: spec.s5 := spec.s5 - 1
+
+    [
+        spec.s5 = 40
+    ]
+    5_9999999999999_1634164221/571.ivy: line 105: spec.s6 := spec.s6 + 1
+
+    [
+        spec.s6 = 10
+    ]
+}
+
+
+--------------------------------------------------------------------------------
+
+********************************************************************************

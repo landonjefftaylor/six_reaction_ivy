@@ -1,0 +1,2 @@
+s1 1 s2 59 s3 0 s4 0 s5 40 | r1 0 r2 58 r3 0 r4 1 r5 41
+s1 ERR s2 ERR s3 ERR s4 ERR s5 ERR | r1 ERR r2 ERR r3 ERR r4 ERR r5 ERR

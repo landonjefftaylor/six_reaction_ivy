@@ -1,0 +1,10 @@
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_six	r_four	
+init	r_four	r_one	r_two	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_two	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_one	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_four	r_six	r_one	r_four	r_six	r_four	
+init	r_one	r_two	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_six	r_four	r_six	r_four	
+init	

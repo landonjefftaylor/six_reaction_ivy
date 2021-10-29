@@ -1,0 +1,3328 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.jeffrey.taylor@usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info,
+install abc, and on the command line use 'abc' > 'pdr --help'
+
+********************************************************************************
+
+10if_1000_1635369784/9.ivy: line 218: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1635369916.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1635369916.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1635369916.aig; pdr -qt -L aigerfiles/1635369916_pdr.log; write_aiger_cex  aigerfiles/1635369916.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1635369916.aig; pdr -qt -L aigerfiles/1635369916_pdr.log; write_aiger_cex  aigerfiles/1635369916.out".
+
+Output 0 of miter "aigerfiles/1635369916" was asserted in frame 22.  Time =    14.33 sec
+--------------------------------------------------------------------------------
+
+FAIL
+
+Counterexample trace follows...
+********************************************************************************
+
+Counterexample follows:
+--------------------------------------------------------------------------------
+err_flag := false
+
+10if_1000_1635369784/9.ivy: line 60: spec.s1 := 1:bv8
+
+[
+    spec.s1 = 1
+]
+10if_1000_1635369784/9.ivy: line 61: spec.s2 := 50:bv8
+
+[
+    spec.s2 = 50
+]
+10if_1000_1635369784/9.ivy: line 62: spec.s3 := 0:bv8
+
+[
+    spec.s3 = 0
+]
+10if_1000_1635369784/9.ivy: line 63: spec.s4 := 1:bv8
+
+[
+    spec.s4 = 1
+]
+10if_1000_1635369784/9.ivy: line 64: spec.s5 := 50:bv8
+
+[
+    spec.s5 = 50
+]
+10if_1000_1635369784/9.ivy: line 65: spec.s6 := 0:bv8
+
+[
+    spec.s6 = 0
+]
+10if_1000_1635369784/9.ivy: line 67: spec.r1 := 0:bv8
+
+[
+    spec.r1 = 0
+]
+10if_1000_1635369784/9.ivy: line 68: spec.r2 := 0:bv8
+
+[
+    spec.r2 = 0
+]
+10if_1000_1635369784/9.ivy: line 69: spec.r3 := 0:bv8
+
+[
+    spec.r3 = 0
+]
+10if_1000_1635369784/9.ivy: line 70: spec.r4 := 0:bv8
+
+[
+    spec.r4 = 0
+]
+10if_1000_1635369784/9.ivy: line 71: spec.r5 := 0:bv8
+
+[
+    spec.r5 = 0
+]
+10if_1000_1635369784/9.ivy: line 72: spec.r6 := 0:bv8
+
+[
+    spec.r6 = 0
+]
+10if_1000_1635369784/9.ivy: line 74: spec.q1 := 0:bv8
+
+[
+    spec.q1 = 0
+]
+10if_1000_1635369784/9.ivy: line 75: spec.q2 := 0:bv8
+
+[
+    spec.q2 = 0
+]
+10if_1000_1635369784/9.ivy: line 76: spec.q3 := 0:bv8
+
+[
+    spec.q3 = 0
+]
+10if_1000_1635369784/9.ivy: line 77: spec.q4 := 0:bv8
+
+[
+    spec.q4 = 0
+]
+10if_1000_1635369784/9.ivy: line 78: spec.q5 := 0:bv8
+
+[
+    spec.q5 = 0
+]
+10if_1000_1635369784/9.ivy: line 79: spec.q6 := 0:bv8
+
+[
+    spec.q6 = 0
+]
+10if_1000_1635369784/9.ivy: line 81: spec.p1 := 0:bv8
+
+[
+    spec.p1 = 0
+]
+10if_1000_1635369784/9.ivy: line 82: spec.p2 := 0:bv8
+
+[
+    spec.p2 = 0
+]
+10if_1000_1635369784/9.ivy: line 83: spec.p3 := 0:bv8
+
+[
+    spec.p3 = 0
+]
+10if_1000_1635369784/9.ivy: line 84: spec.p4 := 0:bv8
+
+[
+    spec.p4 = 0
+]
+10if_1000_1635369784/9.ivy: line 85: spec.p5 := 0:bv8
+
+[
+    spec.p5 = 0
+]
+10if_1000_1635369784/9.ivy: line 86: spec.p6 := 0:bv8
+
+[
+    spec.p6 = 0
+]
+10if_1000_1635369784/9.ivy: line 88: spec.o1 := 0:bv8
+
+[
+    spec.o1 = 0
+]
+10if_1000_1635369784/9.ivy: line 89: spec.o2 := 0:bv8
+
+[
+    spec.o2 = 0
+]
+10if_1000_1635369784/9.ivy: line 90: spec.o3 := 0:bv8
+
+[
+    spec.o3 = 0
+]
+10if_1000_1635369784/9.ivy: line 91: spec.o4 := 0:bv8
+
+[
+    spec.o4 = 0
+]
+10if_1000_1635369784/9.ivy: line 92: spec.o5 := 0:bv8
+
+[
+    spec.o5 = 0
+]
+10if_1000_1635369784/9.ivy: line 93: spec.o6 := 0:bv8
+
+[
+    spec.o6 = 0
+]
+10if_1000_1635369784/9.ivy: line 95: spec.n1 := 0:bv8
+
+[
+    spec.n1 = 0
+]
+10if_1000_1635369784/9.ivy: line 96: spec.n2 := 0:bv8
+
+[
+    spec.n2 = 0
+]
+10if_1000_1635369784/9.ivy: line 97: spec.n3 := 0:bv8
+
+[
+    spec.n3 = 0
+]
+10if_1000_1635369784/9.ivy: line 98: spec.n4 := 0:bv8
+
+[
+    spec.n4 = 0
+]
+10if_1000_1635369784/9.ivy: line 99: spec.n5 := 0:bv8
+
+[
+    spec.n5 = 0
+]
+10if_1000_1635369784/9.ivy: line 100: spec.n6 := 0:bv8
+
+[
+    spec.n6 = 0
+]
+10if_1000_1635369784/9.ivy: line 102: spec.m1 := 0:bv8
+
+[
+    spec.m1 = 0
+]
+10if_1000_1635369784/9.ivy: line 103: spec.m2 := 0:bv8
+
+[
+    spec.m2 = 0
+]
+10if_1000_1635369784/9.ivy: line 104: spec.m3 := 0:bv8
+
+[
+    spec.m3 = 0
+]
+10if_1000_1635369784/9.ivy: line 105: spec.m4 := 0:bv8
+
+[
+    spec.m4 = 0
+]
+10if_1000_1635369784/9.ivy: line 106: spec.m5 := 0:bv8
+
+[
+    spec.m5 = 0
+]
+10if_1000_1635369784/9.ivy: line 107: spec.m6 := 0:bv8
+
+[
+    spec.m6 = 0
+]
+__init := true
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        [
+            spec.r1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        [
+            spec.q1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        [
+            spec.p1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        [
+            spec.o1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        [
+            spec.n1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        [
+            spec.m1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 50
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 49
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 51
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 48
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 52
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 47
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 53
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 46
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 54
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_one
+
+{
+    10if_1000_1635369784/9.ivy: line 157: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 45
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 158: spec.s1 := spec.s1 - 1
+
+        [
+            spec.s1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 159: spec.s2 := spec.s2 - 1
+
+        [
+            spec.s2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 160: spec.s3 := spec.s3 + 1
+
+        [
+            spec.s3 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_two
+
+{
+    10if_1000_1635369784/9.ivy: line 166: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 55
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        [
+            spec.r1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        [
+            spec.r3 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        10if_1000_1635369784/9.ivy: line 167: spec.s1 := spec.s1 + 1
+
+        [
+            spec.s1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 168: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 169: spec.s3 := spec.s3 - 1
+
+        [
+            spec.s3 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 44
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        [
+            spec.q1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        [
+            spec.q3 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        [
+            spec.r1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        [
+            spec.r3 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 42
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        [
+            spec.n5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        [
+            spec.p1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        [
+            spec.p3 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        [
+            spec.q1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        [
+            spec.q3 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 42
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 58
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        [
+            spec.m5 = 43
+        ]
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        [
+            spec.n4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        [
+            spec.n6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        [
+            spec.o1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        [
+            spec.o3 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        [
+            spec.p1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        [
+            spec.p3 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 42
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 58
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 41
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_six
+
+{
+    10if_1000_1635369784/9.ivy: line 202: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        [
+            spec.m4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        [
+            spec.m6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        [
+            spec.n1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        [
+            spec.n3 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        [
+            spec.o1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        [
+            spec.o2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        [
+            spec.o3 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        [
+            spec.p5 = 42
+        ]
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        [
+            spec.q2 = 58
+        ]
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        [
+            spec.r5 = 41
+        ]
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 203: spec.s4 := spec.s4 + 1
+
+        [
+            spec.s4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 204: spec.s2 := spec.s2 + 1
+
+        [
+            spec.s2 = 59
+        ]
+        10if_1000_1635369784/9.ivy: line 205: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.r_four
+
+{
+    10if_1000_1635369784/9.ivy: line 184: call spec.snake
+    {
+        10if_1000_1635369784/9.ivy: line 112: spec.m1 := spec.n1
+
+        [
+            spec.m1 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 113: spec.m2 := spec.n2
+
+        [
+            spec.m2 = 56
+        ]
+        10if_1000_1635369784/9.ivy: line 114: spec.m3 := spec.n3
+
+        [
+            spec.m3 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 115: spec.m4 := spec.n4
+
+        10if_1000_1635369784/9.ivy: line 116: spec.m5 := spec.n5
+
+        10if_1000_1635369784/9.ivy: line 117: spec.m6 := spec.n6
+
+        10if_1000_1635369784/9.ivy: line 119: spec.n1 := spec.o1
+
+        [
+            spec.n1 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 120: spec.n2 := spec.o2
+
+        [
+            spec.n2 = 57
+        ]
+        10if_1000_1635369784/9.ivy: line 121: spec.n3 := spec.o3
+
+        [
+            spec.n3 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 122: spec.n4 := spec.o4
+
+        10if_1000_1635369784/9.ivy: line 123: spec.n5 := spec.o5
+
+        10if_1000_1635369784/9.ivy: line 124: spec.n6 := spec.o6
+
+        10if_1000_1635369784/9.ivy: line 126: spec.o1 := spec.p1
+
+        10if_1000_1635369784/9.ivy: line 127: spec.o2 := spec.p2
+
+        10if_1000_1635369784/9.ivy: line 128: spec.o3 := spec.p3
+
+        10if_1000_1635369784/9.ivy: line 129: spec.o4 := spec.p4
+
+        [
+            spec.o4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 130: spec.o5 := spec.p5
+
+        [
+            spec.o5 = 42
+        ]
+        10if_1000_1635369784/9.ivy: line 131: spec.o6 := spec.p6
+
+        [
+            spec.o6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 133: spec.p1 := spec.q1
+
+        10if_1000_1635369784/9.ivy: line 134: spec.p2 := spec.q2
+
+        [
+            spec.p2 = 58
+        ]
+        10if_1000_1635369784/9.ivy: line 135: spec.p3 := spec.q3
+
+        10if_1000_1635369784/9.ivy: line 136: spec.p4 := spec.q4
+
+        [
+            spec.p4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 137: spec.p5 := spec.q5
+
+        10if_1000_1635369784/9.ivy: line 138: spec.p6 := spec.q6
+
+        [
+            spec.p6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 140: spec.q1 := spec.r1
+
+        10if_1000_1635369784/9.ivy: line 141: spec.q2 := spec.r2
+
+        10if_1000_1635369784/9.ivy: line 142: spec.q3 := spec.r3
+
+        10if_1000_1635369784/9.ivy: line 143: spec.q4 := spec.r4
+
+        [
+            spec.q4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 144: spec.q5 := spec.r5
+
+        [
+            spec.q5 = 41
+        ]
+        10if_1000_1635369784/9.ivy: line 145: spec.q6 := spec.r6
+
+        [
+            spec.q6 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 147: spec.r1 := spec.s1
+
+        10if_1000_1635369784/9.ivy: line 148: spec.r2 := spec.s2
+
+        [
+            spec.r2 = 59
+        ]
+        10if_1000_1635369784/9.ivy: line 149: spec.r3 := spec.s3
+
+        10if_1000_1635369784/9.ivy: line 150: spec.r4 := spec.s4
+
+        [
+            spec.r4 = 1
+        ]
+        10if_1000_1635369784/9.ivy: line 151: spec.r5 := spec.s5
+
+        10if_1000_1635369784/9.ivy: line 152: spec.r6 := spec.s6
+
+        [
+            spec.r6 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 185: spec.s4 := spec.s4 - 1
+
+        [
+            spec.s4 = 0
+        ]
+        10if_1000_1635369784/9.ivy: line 186: spec.s5 := spec.s5 - 1
+
+        [
+            spec.s5 = 40
+        ]
+        10if_1000_1635369784/9.ivy: line 187: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+
+--------------------------------------------------------------------------------
+
+********************************************************************************

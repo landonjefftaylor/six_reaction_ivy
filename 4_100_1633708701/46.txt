@@ -1,0 +1,1206 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.jeffrey.taylor@usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info,
+install abc, and on the command line use 'abc' > 'pdr --help'
+
+********************************************************************************
+
+4_100_1633708701/46.ivy: line 175: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1633709538.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1633709538.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1633709538.aig; pdr -qt -L aigerfiles/1633709538_pdr.log; write_aiger_cex  aigerfiles/1633709538.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1633709538.aig; pdr -qt -L aigerfiles/1633709538_pdr.log; write_aiger_cex  aigerfiles/1633709538.out".
+
+Output 0 of miter "aigerfiles/1633709538" was asserted in frame 25.  Time =    18.81 sec
+--------------------------------------------------------------------------------
+
+FAIL
+
+Counterexample trace follows...
+********************************************************************************
+
+Counterexample follows:
+--------------------------------------------------------------------------------
+err_flag := false
+
+4_100_1633708701/46.ivy: line 37: spec.s1 := 1:bv8
+
+[
+    spec.s1 = 1
+]
+4_100_1633708701/46.ivy: line 38: spec.s2 := 50:bv8
+
+[
+    spec.s2 = 50
+]
+4_100_1633708701/46.ivy: line 39: spec.s3 := 0:bv8
+
+[
+    spec.s3 = 0
+]
+4_100_1633708701/46.ivy: line 40: spec.s4 := 1:bv8
+
+[
+    spec.s4 = 1
+]
+4_100_1633708701/46.ivy: line 41: spec.s5 := 50:bv8
+
+[
+    spec.s5 = 50
+]
+4_100_1633708701/46.ivy: line 42: spec.s6 := 0:bv8
+
+[
+    spec.s6 = 0
+]
+4_100_1633708701/46.ivy: line 44: spec.r1 := 0:bv8
+
+[
+    spec.r1 = 0
+]
+4_100_1633708701/46.ivy: line 45: spec.r2 := 0:bv8
+
+[
+    spec.r2 = 0
+]
+4_100_1633708701/46.ivy: line 46: spec.r3 := 0:bv8
+
+[
+    spec.r3 = 0
+]
+4_100_1633708701/46.ivy: line 47: spec.r4 := 0:bv8
+
+[
+    spec.r4 = 0
+]
+4_100_1633708701/46.ivy: line 48: spec.r5 := 0:bv8
+
+[
+    spec.r5 = 0
+]
+4_100_1633708701/46.ivy: line 49: spec.r6 := 0:bv8
+
+[
+    spec.r6 = 0
+]
+4_100_1633708701/46.ivy: line 51: spec.q1 := 0:bv8
+
+[
+    spec.q1 = 0
+]
+4_100_1633708701/46.ivy: line 52: spec.q2 := 0:bv8
+
+[
+    spec.q2 = 0
+]
+4_100_1633708701/46.ivy: line 53: spec.q3 := 0:bv8
+
+[
+    spec.q3 = 0
+]
+4_100_1633708701/46.ivy: line 54: spec.q4 := 0:bv8
+
+[
+    spec.q4 = 0
+]
+4_100_1633708701/46.ivy: line 55: spec.q5 := 0:bv8
+
+[
+    spec.q5 = 0
+]
+4_100_1633708701/46.ivy: line 56: spec.q6 := 0:bv8
+
+[
+    spec.q6 = 0
+]
+__init := true
+
+[
+    random = ra6
+]
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 49
+            spec.s6 = 1
+            spec.r5 = 50
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.r2 = 50
+            spec.r4 = 0
+            spec.s2 = 51
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 48
+            spec.s6 = 1
+            spec.q5 = 50
+            spec.r6 = 0
+            spec.r5 = 49
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 50
+            spec.r2 = 51
+            spec.r4 = 0
+            spec.s2 = 52
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 47
+            spec.s6 = 1
+            spec.q5 = 49
+            spec.r6 = 0
+            spec.r5 = 48
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 51
+            spec.r2 = 52
+            spec.r4 = 0
+            spec.s2 = 53
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 46
+            spec.s6 = 1
+            spec.q5 = 48
+            spec.r6 = 0
+            spec.r5 = 47
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 52
+            spec.r2 = 53
+            spec.r4 = 0
+            spec.s2 = 54
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 45
+            spec.s6 = 1
+            spec.q5 = 47
+            spec.r6 = 0
+            spec.r5 = 46
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 53
+            spec.r2 = 54
+            spec.r4 = 0
+            spec.s2 = 55
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 44
+            spec.s6 = 1
+            spec.q5 = 46
+            spec.r6 = 0
+            spec.r5 = 45
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 54
+            spec.r2 = 55
+            spec.r4 = 0
+            spec.s2 = 56
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 43
+            spec.s6 = 1
+            spec.q5 = 45
+            spec.r6 = 0
+            spec.r5 = 44
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 55
+            spec.r2 = 56
+            spec.r4 = 0
+            spec.s2 = 57
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 42
+            spec.s6 = 1
+            spec.q5 = 44
+            spec.r6 = 0
+            spec.r5 = 43
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 56
+            spec.r2 = 57
+            spec.r4 = 0
+            spec.s2 = 58
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 41
+            spec.s6 = 1
+            spec.q5 = 43
+            spec.r6 = 0
+            spec.r5 = 42
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 57
+            spec.r2 = 58
+            spec.r4 = 0
+            spec.s2 = 59
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 40
+            spec.s6 = 1
+            spec.q5 = 42
+            spec.r6 = 0
+            spec.r5 = 41
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra1
+    ]
+    4_100_1633708701/46.ivy: line 141: call spec.r_one
+    {
+        4_100_1633708701/46.ivy: line 61: spec.q1 := spec.r1
+
+        4_100_1633708701/46.ivy: line 62: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 63: spec.q3 := spec.r3
+
+        4_100_1633708701/46.ivy: line 64: spec.r1 := spec.s1
+
+        4_100_1633708701/46.ivy: line 65: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 66: spec.r3 := spec.s3
+
+        4_100_1633708701/46.ivy: line 67: spec.s1 := spec.s1 - 1
+
+        4_100_1633708701/46.ivy: line 68: spec.s2 := spec.s2 - 1
+
+        4_100_1633708701/46.ivy: line 69: spec.s3 := spec.s3 + 1
+
+        [
+            spec.s3 = 1
+            spec.q2 = 58
+            spec.r2 = 59
+            spec.s1 = 0
+            spec.s2 = 58
+            spec.r1 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 59
+            spec.r2 = 58
+            spec.r4 = 0
+            spec.s2 = 59
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra4
+    ]
+    4_100_1633708701/46.ivy: line 156: call spec.r_four
+    {
+        4_100_1633708701/46.ivy: line 97: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 98: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 99: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 100: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 101: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 102: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 103: spec.s4 := spec.s4 - 1
+
+        4_100_1633708701/46.ivy: line 104: spec.s5 := spec.s5 - 1
+
+        4_100_1633708701/46.ivy: line 105: spec.s6 := spec.s6 + 1
+
+        [
+            spec.q4 = 0
+            spec.r4 = 1
+            spec.s4 = 0
+            spec.s5 = 39
+            spec.s6 = 1
+            spec.q5 = 41
+            spec.r6 = 0
+            spec.r5 = 40
+            spec.q6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra6
+    ]
+    4_100_1633708701/46.ivy: line 166: call spec.r_six
+    {
+        4_100_1633708701/46.ivy: line 121: spec.q4 := spec.r4
+
+        4_100_1633708701/46.ivy: line 122: spec.q2 := spec.r2
+
+        4_100_1633708701/46.ivy: line 123: spec.q6 := spec.r6
+
+        4_100_1633708701/46.ivy: line 124: spec.r4 := spec.s4
+
+        4_100_1633708701/46.ivy: line 125: spec.r2 := spec.s2
+
+        4_100_1633708701/46.ivy: line 126: spec.r6 := spec.s6
+
+        4_100_1633708701/46.ivy: line 127: spec.s4 := spec.s4 + 1
+
+        4_100_1633708701/46.ivy: line 128: spec.s2 := spec.s2 + 1
+
+        4_100_1633708701/46.ivy: line 129: spec.s6 := spec.s6 - 1
+
+        [
+            spec.q4 = 1
+            spec.q2 = 58
+            spec.r2 = 59
+            spec.r4 = 0
+            spec.s2 = 60
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.r6 = 1
+            spec.q6 = 0
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    4_100_1633708701/46.ivy: line 138: random := *
+
+    [
+        random = ra3
+    ]
+    4_100_1633708701/46.ivy: line 151: call spec.r_three
+    {
+        4_100_1633708701/46.ivy: line 85: spec.q1 := spec.r1
+
+        4_100_1633708701/46.ivy: line 86: spec.q3 := spec.r3
+
+        4_100_1633708701/46.ivy: line 87: spec.q5 := spec.r5
+
+        4_100_1633708701/46.ivy: line 88: spec.r1 := spec.s1
+
+        4_100_1633708701/46.ivy: line 89: spec.r3 := spec.s3
+
+        4_100_1633708701/46.ivy: line 90: spec.r5 := spec.s5
+
+        4_100_1633708701/46.ivy: line 91: spec.s1 := spec.s1 + 1
+
+        4_100_1633708701/46.ivy: line 92: spec.s3 := spec.s3 - 1
+
+        4_100_1633708701/46.ivy: line 93: spec.s5 := spec.s5 + 1
+
+        [
+            spec.s3 = 0
+            spec.s1 = 1
+            spec.q1 = 1
+            spec.s5 = 40
+            spec.r3 = 1
+            spec.q5 = 40
+            spec.r5 = 39
+            spec.r1 = 0
+        ]
+    }
+
+}
+
+
+--------------------------------------------------------------------------------
+
+********************************************************************************

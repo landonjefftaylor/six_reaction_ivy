@@ -1,0 +1,102 @@
+#lang ivy1.7
+
+attribute method = mc
+
+type bv8
+interpret bv8 -> bv[10] #lowering this lowers execution time
+
+type rand = {r1,r2,r3,r4,r5,r6}
+var r : rand
+
+# var rand : bv4
+
+object spec = {
+
+var s1 : bv8
+var s2 : bv8
+var s3 : bv8
+var s4 : bv8
+var s5 : bv8
+var s6 : bv8
+
+after init {
+  s1 := 1;
+  s2 := 50;
+  s3 := 0;
+  s4 := 1;
+  s5 := 50;
+  s6 := 0;
+} #init
+
+action r_one = {
+  s1 := s1 - 1;
+  s2 := s2 - 1;
+  s3 := s3 + 1;
+} #end r_one
+
+action r_two = {
+  s1 := s1 + 1;
+  s2 := s2 + 1;
+  s3 := s3 - 1;
+} #end r_two
+
+action r_three = {
+  s1 := s1 + 1;
+  s3 := s3 - 1;
+  s5 := s5 + 1;
+} #end r_three
+
+action r_four = {
+  s4 := s4 - 1;
+  s5 := s5 - 1;
+  s6 := s6 + 1;
+} #end r_four
+
+action r_five = {
+  s4 := s4 + 1;
+  s5 := s5 + 1;
+  s6 := s6 - 1;
+} #end r_five
+
+action r_six = {
+  s4 := s4 + 1;
+  s2 := s2 + 1;
+  s6 := s6 - 1;
+} #end r_six
+
+#IVy was having problems with >0, it thought 0>0
+#updating the value to 1 makes it run much much slower.
+
+action start = {
+  r := *;
+  if r = r1 {
+    assume (s1 >= 1) & (s2 >= 1);
+    call r_one;
+  };
+  if r = r2 {
+    assume (s3 >= 1);
+    call r_two;
+  };
+  if r = r3 {
+    assume (s3 >= 1);
+    call r_three;
+  };
+  if r = r4 {
+    assume (s4 >= 1) & (s5 >= 1);
+    call r_four;
+  };
+  if r = r5 {
+    assume (s6 >= 1);
+    call r_five;
+  };
+  if r = r6 {
+    assume (s6 >= 1);
+    call r_six;
+  };
+} #end start
+
+export start
+
+} #end spec
+
+invariant (spec.s5 ~= 40) | (spec.s1 = 1 & spec.s2 = 59 & spec.s3 = 0 & spec.s4 = 0 & spec.s5 = 40) | (spec.s1 = 1 & spec.s2 = 60 & spec.s3 = 0 & spec.s4 = 1 & spec.s5 = 40) | (spec.s1 = 0 & spec.s2 = 58 & spec.s3 = 1 & spec.s4 = 0 & spec.s5 = 40)

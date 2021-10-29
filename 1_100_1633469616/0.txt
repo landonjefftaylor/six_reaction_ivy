@@ -1,0 +1,627 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.jeffrey.taylor@usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info,
+install abc, and on the command line use 'abc' > 'pdr --help'
+
+********************************************************************************
+
+1_100_1633469616/0.ivy: line 102: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1633469623.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1633469623.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1633469623.aig; pdr -qt -L aigerfiles/1633469623_pdr.log; write_aiger_cex  aigerfiles/1633469623.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1633469623.aig; pdr -qt -L aigerfiles/1633469623_pdr.log; write_aiger_cex  aigerfiles/1633469623.out".
+
+Output 0 of miter "aigerfiles/1633469623" was asserted in frame 20.  Time =     7.53 sec
+--------------------------------------------------------------------------------
+
+FAIL
+
+Counterexample trace follows...
+********************************************************************************
+
+Counterexample follows:
+--------------------------------------------------------------------------------
+err_flag := false
+
+1_100_1633469616/0.ivy: line 23: spec.s1 := 1:bv8
+
+[
+    spec.s1 = 1
+]
+1_100_1633469616/0.ivy: line 24: spec.s2 := 50:bv8
+
+[
+    spec.s2 = 50
+]
+1_100_1633469616/0.ivy: line 25: spec.s3 := 0:bv8
+
+[
+    spec.s3 = 0
+]
+1_100_1633469616/0.ivy: line 26: spec.s4 := 1:bv8
+
+[
+    spec.s4 = 1
+]
+1_100_1633469616/0.ivy: line 27: spec.s5 := 50:bv8
+
+[
+    spec.s5 = 50
+]
+1_100_1633469616/0.ivy: line 28: spec.s6 := 0:bv8
+
+[
+    spec.s6 = 0
+]
+__init := true
+
+[
+    r = r6
+]
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 49
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 51
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 48
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 52
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 47
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 53
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 46
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 54
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 45
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 55
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 44
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 56
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 43
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 57
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 42
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 58
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 41
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r6
+    ]
+    1_100_1633469616/0.ivy: line 93: assume err_flag | spec.s6 >= 1
+
+    1_100_1633469616/0.ivy: line 94: call spec.r_six
+    {
+        1_100_1633469616/0.ivy: line 62: spec.s4 := spec.s4 + 1
+
+        1_100_1633469616/0.ivy: line 63: spec.s2 := spec.s2 + 1
+
+        1_100_1633469616/0.ivy: line 64: spec.s6 := spec.s6 - 1
+
+        [
+            spec.s4 = 1
+            spec.s6 = 0
+            spec.s2 = 59
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    1_100_1633469616/0.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    1_100_1633469616/0.ivy: line 85: assume err_flag | spec.s4 >= 1 & spec.s5 >= 1
+
+    1_100_1633469616/0.ivy: line 86: call spec.r_four
+    {
+        1_100_1633469616/0.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        1_100_1633469616/0.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        1_100_1633469616/0.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 40
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+
+--------------------------------------------------------------------------------
+
+********************************************************************************

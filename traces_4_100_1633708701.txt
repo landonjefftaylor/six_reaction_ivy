@@ -1,0 +1,69 @@
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_six	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_two	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_two	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_two	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_one	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_one	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_five	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_six	r_four	r_five	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_four	r_one	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_one	r_six	r_four	r_six	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	r_six	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_five	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_six	r_four	r_six	r_one	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_two	r_four	r_six	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	r_one	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_six	r_four	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_six	r_four	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	r_one	r_two	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_five	r_four	r_six	r_two	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_three	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_one	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_three	r_one	r_six	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_three	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_one	r_six	r_four	r_six	r_four	r_five	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_five	r_four	r_two	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_three	r_one	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_two	r_six	r_four	r_one	r_six	r_four	r_five	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_one	r_four	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_four	r_one	r_two	r_six	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_six	r_three	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_two	r_one	r_six	r_four	r_six	r_four	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_five	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_four	r_six	r_four	r_six	r_four	r_three	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_three	r_five	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_three	r_five	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_three	r_one	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_one	r_three	r_four	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_six	r_four	r_three	r_one	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_five	r_one	r_three	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_four	r_one	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_one	r_three	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_three	r_one	r_three	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_three	r_one	r_three	r_one	r_six	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_three	r_one	r_three	r_one	r_two	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_one	r_six	r_four	r_three	r_one	r_three	r_one	r_two	r_one	
+init	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_four	r_six	r_one	r_three	r_one	r_three	r_four	r_five	

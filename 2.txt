@@ -1,0 +1,339 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.jeffrey.taylor@usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info,
+install abc, and on the command line use 'abc' > 'pdr --help'
+
+********************************************************************************
+
+2.ivy: line 102: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1632512185.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1632512185.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1632512185.aig; pdr -qt -L aigerfiles/1632512185_pdr.log; write_aiger_cex  aigerfiles/1632512185.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1632512185.aig; pdr -qt -L aigerfiles/1632512185_pdr.log; write_aiger_cex  aigerfiles/1632512185.out".
+
+Output 0 of miter "aigerfiles/1632512185" was asserted in frame 11.  Time =     0.04 sec
+--------------------------------------------------------------------------------
+
+FAIL
+
+Counterexample trace follows...
+********************************************************************************
+
+Counterexample follows:
+--------------------------------------------------------------------------------
+err_flag := false
+
+2.ivy: line 23: spec.s1 := 1:bv8
+
+[
+    spec.s1 = 1
+]
+2.ivy: line 24: spec.s2 := 50:bv8
+
+[
+    spec.s2 = 50
+]
+2.ivy: line 25: spec.s3 := 0:bv8
+
+[
+    spec.s3 = 0
+]
+2.ivy: line 26: spec.s4 := 1:bv8
+
+[
+    spec.s4 = 1
+]
+2.ivy: line 27: spec.s5 := 50:bv8
+
+[
+    spec.s5 = 50
+]
+2.ivy: line 28: spec.s6 := 0:bv8
+
+[
+    spec.s6 = 0
+]
+__init := true
+
+[
+    r = r1
+]
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    [
+        r = r4
+    ]
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 0
+            spec.s5 = 49
+            spec.s6 = 1
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 255
+            spec.s5 = 48
+            spec.s6 = 2
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 254
+            spec.s5 = 47
+            spec.s6 = 3
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 253
+            spec.s5 = 46
+            spec.s6 = 4
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 252
+            spec.s5 = 45
+            spec.s6 = 5
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 251
+            spec.s5 = 44
+            spec.s6 = 6
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 250
+            spec.s5 = 43
+            spec.s6 = 7
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 249
+            spec.s5 = 42
+            spec.s6 = 8
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 248
+            spec.s5 = 41
+            spec.s6 = 9
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:spec.start
+
+{
+    2.ivy: line 71: r := *
+
+    2.ivy: line 85: assume err_flag | spec.s4 > 0 & spec.s5 > 0
+
+    2.ivy: line 86: call spec.r_four
+    {
+        2.ivy: line 50: spec.s4 := spec.s4 - 1
+
+        2.ivy: line 51: spec.s5 := spec.s5 - 1
+
+        2.ivy: line 52: spec.s6 := spec.s6 + 1
+
+        [
+            spec.s4 = 247
+            spec.s5 = 40
+            spec.s6 = 10
+        ]
+    }
+
+}
+
+
+--------------------------------------------------------------------------------
+
+********************************************************************************

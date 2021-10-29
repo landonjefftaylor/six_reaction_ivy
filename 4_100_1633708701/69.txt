@@ -1,0 +1,34 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.jeffrey.taylor@usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info,
+install abc, and on the command line use 'abc' > 'pdr --help'
+
+********************************************************************************
+
+4_100_1633708701/69.ivy: line 175: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1633710389.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1633710389.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1633710389.aig; pdr -qt -L aigerfiles/1633710389_pdr.log; write_aiger_cex  aigerfiles/1633710389.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1633710389.aig; pdr -qt -L aigerfiles/1633710389_pdr.log; write_aiger_cex  aigerfiles/1633710389.out".
+
+Invariant F[107] : 1679 clauses with 129 flops (out of 150) (cex = 110, ave = 16.79)
+Verification of invariant with 1679 clauses was successful.  Time =     0.18 sec
+Property proved.  Time =  5561.98 sec
+There is no current CEX.
+--------------------------------------------------------------------------------
+
+PASS
+
+OK
