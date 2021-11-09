@@ -1,0 +1,156 @@
+#lang ivy1.7
+
+attribute method = mc
+
+var valid : bool
+var done : bool
+var ack : bool
+var rdy : bool
+
+object spec = {
+  after init {
+    valid := false;
+    done := false;
+    rdy := false;
+    ack := false;
+  }
+}
+
+object producer = {
+
+  action pro1 = {
+    if ~rdy & valid {
+      valid := false;
+    };
+  } #end pro1
+  
+  action pro2 = {
+    if ~rdy & ~valid {
+      valid := true;
+    };
+  } #end pro2
+  
+  action pro3 = {
+    if valid {
+      valid := false;
+    };
+  } #end pro3
+  
+  action pro4 = {
+    if ~valid {
+      valid := true;
+    };
+  } #end pro4
+  
+  export pro1
+  export pro2
+  export pro3
+  export pro4
+  
+} #end producer
+
+
+object consumer = {
+
+  action con1 = {
+    if ack & ~done {
+      done := true;
+    };
+  } #end con1
+  
+  action con2 = {
+    if ~ack & done {
+      done := false;
+    };
+  } #end con2
+  
+  action con3 = {
+    if done {
+      done := false;
+    };
+  } #end con3
+  
+  action con4 = {
+    if ~done {
+      done := true;
+    };
+  } #end con4
+  
+  export con1
+  export con2
+  export con3
+  export con4
+  
+} #end consumer
+
+
+object sender = {
+
+  action sen1 = {
+    if valid & ~ack & ~rdy {
+      rdy := true;
+    };
+  } #end sen1
+  
+  action sen2 = {
+    if rdy & ack {
+      rdy := false;
+    };
+  } #end sen2
+  
+  action sen3 = {
+    if rdy {
+      rdy := false;
+    };
+  } #end sen3
+  
+  action sen4 = {
+    if ~rdy {
+      rdy := 1;
+    };
+  } #end sen4
+  
+  export sen1
+  export sen2
+  export sen3
+  export sen4
+  
+} #end sender
+
+
+object reciever = {
+
+  action rec1 = {
+    if rdy & ~ack & ~done {
+      ack := true;
+    };
+  } #end rec1
+  
+  action rec2 = {
+    if ~rdy & done & ack {
+      ack := false;
+    };
+  } #end rec2
+  
+  action rec3 = {
+    if ack {
+      ack := false;
+    };
+  } #end rec3
+  
+  action rec4 = {
+    if ~ack {
+      ack := true;
+    };
+  } #end rec4
+  
+  export rec1
+  export rec2
+  export rec3
+  export rec4
+  
+} #end reciever
+
+invariant (~(valid & ack & done & rdy) & ~(~valid & rdy & ~ack & done))
+
+# order is done ~ack rdy ~valid

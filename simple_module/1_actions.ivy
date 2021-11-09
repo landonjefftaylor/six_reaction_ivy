@@ -1,0 +1,213 @@
+#lang ivy1.7
+
+attribute method = mc
+
+type acts = {p1,p2,p3,p4,c1,c2,c3,c4,s1,s2,s3,s4,r1,r2,r3,r4}
+
+var valid : bool
+var done : bool
+var ack : bool
+var rdy : bool
+
+object spec = {
+
+  var a0 : acts # final actn
+  var a1 : acts
+  var a2 : acts
+  var a3 : acts
+  var a4 : acts
+  var a5 : acts
+  var a6 : acts
+  var a7 : acts
+  var a8 : acts
+  var a9 : acts
+  
+  after init {
+    valid := false;
+    done := false;
+    rdy := false;
+    ack := false;
+  }
+  
+  action trail = {
+    a9 := a8;
+    a8 := a7;
+    a7 := a6;
+    a6 := a5;
+    a5 := a4;
+    a4 := a3;
+    a3 := a2;
+    a2 := a1;
+    a1 := a0;
+  } #end trail
+
+}
+
+object producer = {
+
+  action pro1 = {
+    if ~rdy & valid {
+      valid := false;
+      call spec.trail;
+      spec.a0 := p1;
+    };
+  } #end pro1
+  
+  action pro2 = {
+    if ~rdy & ~valid {
+      valid := true;
+      call spec.trail;
+      spec.a0 := p2;
+    };
+  } #end pro2
+  
+  action pro3 = {
+    if valid {
+      valid := false;
+      call spec.trail;
+      spec.a0 := p3;
+    };
+  } #end pro3
+  
+  action pro4 = {
+    if ~valid {
+      valid := true;
+      call spec.trail;
+      spec.a0 := p4;
+    };
+  } #end pro4
+  
+  export pro1
+  export pro2
+  export pro3
+  export pro4
+  
+} #end producer
+
+
+object consumer = {
+
+  action con1 = {
+    if ack & ~done {
+      done := true;
+      call spec.trail;
+      spec.a0 := c1;
+    };
+  } #end con1
+  
+  action con2 = {
+    if ~ack & done {
+      done := false;
+      call spec.trail;
+      spec.a0 := c2;
+    };
+  } #end con2
+  
+  action con3 = {
+    if done {
+      done := false;
+      call spec.trail;
+      spec.a0 := c3;
+    };
+  } #end con3
+  
+  action con4 = {
+    if ~done {
+      done := true;
+      call spec.trail;
+      spec.a0 := c4;
+    };
+  } #end con4
+  
+  export con1
+  export con2
+  export con3
+  export con4
+  
+} #end consumer
+
+
+object sender = {
+
+  action sen1 = {
+    if valid & ~ack & ~rdy {
+      rdy := true;
+      call spec.trail;
+      spec.a0 := s1;
+    };
+  } #end sen1
+  
+  action sen2 = {
+    if rdy & ack {
+      rdy := false;
+      call spec.trail;
+      spec.a0 := s2;
+    };
+  } #end sen2
+  
+  action sen3 = {
+    if rdy {
+      rdy := false;
+      call spec.trail;
+      spec.a0 := s3;
+    };
+  } #end sen3
+  
+  action sen4 = {
+    if ~rdy {
+      rdy := 1;
+      call spec.trail;
+      spec.a0 := s4;
+    };
+  } #end sen4
+  
+  export sen1
+  export sen2
+  export sen3
+  export sen4
+  
+} #end sender
+
+
+object reciever = {
+
+  action rec1 = {
+    if rdy & ~ack & ~done {
+      ack := true;
+      call spec.trail;
+      spec.a0 := r1;
+    };
+  } #end rec1
+  
+  action rec2 = {
+    if ~rdy & done & ack {
+      ack := false;
+      call spec.trail;
+      spec.a0 := r2;
+    };
+  } #end rec2
+  
+  action rec3 = {
+    if ack {
+      ack := false;
+      call spec.trail;
+      spec.a0 := r3;
+    };
+  } #end rec3
+  
+  action rec4 = {
+    if ~ack {
+      ack := true;
+      call spec.trail;
+      spec.a0 := r4;
+    };
+  } #end rec4
+  
+  export rec1
+  export rec2
+  export rec3
+  export rec4
+  
+} #end reciever
+
+invariant ~(valid & ack & done & rdy)
