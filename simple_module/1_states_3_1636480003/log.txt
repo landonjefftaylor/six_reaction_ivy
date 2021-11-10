@@ -1,0 +1,1 @@
+Checked index 0 in 2.65 secondsChecked index 1 in 2.67 secondsChecked index 2 in 2.88 seconds
