@@ -1,0 +1,563 @@
+
+Isolate this:
+
+********************************************************************************
+
+This version has been modified by Landon Taylor. landon.taylor@aggiemail.usu.edu
+The ABCModelChecker function is using 'pdr -qt -L pdr_log.txt'. For more info, 
+
+
+install abc, and on the command line use 'abc' > 'pdr --help'
+1_states_9999999999999_1636480470/286.ivy: line 263: Model checking invariant
+
+Instantiating quantifiers (see logfiles/ivy_mc_1636482203.log for instantiations)...
+Expanding schemata...
+Instantiating axioms...
+file name: aigerfiles/1636482203.aag
+aigtoaig_path:/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/aigtoaig
+abc_path: /usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc
+using cmd ['/usr/local/lib/python2.7/dist-packages/ms_ivy-1.7.0-py2.7.egg/ivy/bin/abc', '-c', 'read_aiger aigerfiles/1636482203.aig; pdr -qt -L aigerfiles/1636482203_pdr.log; write_aiger_cex  aigerfiles/1636482203.out']
+
+Model checker output:
+--------------------------------------------------------------------------------
+ABC command line: "read_aiger aigerfiles/1636482203.aig; pdr -qt -L aigerfiles/1636482203_pdr.log; write_aiger_cex  aigerfiles/1636482203.out".
+
+Output 0 of miter "aigerfiles/1636482203" was asserted in frame 5.  Time =     0.27 sec
+--------------------------------------------------------------------------------
+
+FAIL
+
+Counterexample trace follows...
+********************************************************************************
+
+Counterexample follows:
+--------------------------------------------------------------------------------
+[
+    1:bool = false
+]
+err_flag := false
+
+1_states_9999999999999_1636480470/286.ivy: line 57: valid := false
+
+[
+    valid = false
+]
+1_states_9999999999999_1636480470/286.ivy: line 58: done := false
+
+[
+    done = false
+]
+1_states_9999999999999_1636480470/286.ivy: line 59: rdy := false
+
+[
+    rdy = false
+]
+1_states_9999999999999_1636480470/286.ivy: line 60: ack := false
+
+[
+    ack = false
+]
+__init := true
+
+[
+    spec.r6 = false
+    spec.a5 = false
+    spec.d9 = false
+    spec.r0 = false
+    spec.d5 = false
+    spec.a6 = false
+    spec.d4 = true
+    spec.d2 = false
+    spec.v6 = false
+    spec.v9 = false
+    spec.d1 = false
+    spec.v1 = false
+    spec.v3 = false
+    spec.r5 = false
+    spec.a1 = false
+    spec.v8 = false
+    spec.d8 = false
+    spec.a7 = false
+    spec.v0 = true
+    spec.a8 = false
+    spec.d7 = false
+    spec.r2 = false
+    spec.r4 = false
+    spec.a0 = false
+    spec.a2 = false
+    spec.v5 = false
+    spec.d0 = false
+    spec.r7 = false
+    spec.a9 = false
+    spec.v2 = false
+    spec.d6 = false
+    spec.r9 = false
+    spec.v4 = false
+    spec.a4 = false
+    spec.v7 = false
+    spec.r8 = false
+    spec.r1 = false
+    spec.r3 = false
+    spec.a3 = false
+    spec.d3 = false
+]
+[
+    1:bool = true
+]
+err_flag := false
+
+call ext:consumer.con4
+
+{
+    1_states_9999999999999_1636480470/286.ivy: line 175: done := true
+
+    [
+        done = true
+    ]
+    1_states_9999999999999_1636480470/286.ivy: line 176: call spec.trail
+    {
+        1_states_9999999999999_1636480470/286.ivy: line 64: spec.v0 := valid
+
+        [
+            spec.v0 = false
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 65: spec.d0 := done
+
+        [
+            spec.d0 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 66: spec.a0 := ack
+
+        1_states_9999999999999_1636480470/286.ivy: line 67: spec.r0 := rdy
+
+        1_states_9999999999999_1636480470/286.ivy: line 69: spec.v9 := spec.v8
+
+        1_states_9999999999999_1636480470/286.ivy: line 70: spec.v8 := spec.v7
+
+        1_states_9999999999999_1636480470/286.ivy: line 71: spec.v7 := spec.v6
+
+        1_states_9999999999999_1636480470/286.ivy: line 72: spec.v6 := spec.v5
+
+        1_states_9999999999999_1636480470/286.ivy: line 73: spec.v5 := spec.v4
+
+        1_states_9999999999999_1636480470/286.ivy: line 74: spec.v4 := spec.v3
+
+        1_states_9999999999999_1636480470/286.ivy: line 75: spec.v3 := spec.v2
+
+        1_states_9999999999999_1636480470/286.ivy: line 76: spec.v2 := spec.v1
+
+        1_states_9999999999999_1636480470/286.ivy: line 77: spec.v1 := spec.v0
+
+        1_states_9999999999999_1636480470/286.ivy: line 79: spec.d9 := spec.d8
+
+        1_states_9999999999999_1636480470/286.ivy: line 80: spec.d8 := spec.d7
+
+        1_states_9999999999999_1636480470/286.ivy: line 81: spec.d7 := spec.d6
+
+        1_states_9999999999999_1636480470/286.ivy: line 82: spec.d6 := spec.d5
+
+        1_states_9999999999999_1636480470/286.ivy: line 83: spec.d5 := spec.d4
+
+        [
+            spec.d5 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 84: spec.d4 := spec.d3
+
+        [
+            spec.d4 = false
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 85: spec.d3 := spec.d2
+
+        1_states_9999999999999_1636480470/286.ivy: line 86: spec.d2 := spec.d1
+
+        1_states_9999999999999_1636480470/286.ivy: line 87: spec.d1 := spec.d0
+
+        [
+            spec.d1 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 89: spec.a9 := spec.a8
+
+        1_states_9999999999999_1636480470/286.ivy: line 90: spec.a8 := spec.a7
+
+        1_states_9999999999999_1636480470/286.ivy: line 91: spec.a7 := spec.a6
+
+        1_states_9999999999999_1636480470/286.ivy: line 92: spec.a6 := spec.a5
+
+        1_states_9999999999999_1636480470/286.ivy: line 93: spec.a5 := spec.a4
+
+        1_states_9999999999999_1636480470/286.ivy: line 94: spec.a4 := spec.a3
+
+        1_states_9999999999999_1636480470/286.ivy: line 95: spec.a3 := spec.a2
+
+        1_states_9999999999999_1636480470/286.ivy: line 96: spec.a2 := spec.a1
+
+        1_states_9999999999999_1636480470/286.ivy: line 97: spec.a1 := spec.a0
+
+        1_states_9999999999999_1636480470/286.ivy: line 99: spec.r9 := spec.r8
+
+        1_states_9999999999999_1636480470/286.ivy: line 100: spec.r8 := spec.r7
+
+        1_states_9999999999999_1636480470/286.ivy: line 101: spec.r7 := spec.r6
+
+        1_states_9999999999999_1636480470/286.ivy: line 102: spec.r6 := spec.r5
+
+        1_states_9999999999999_1636480470/286.ivy: line 103: spec.r5 := spec.r4
+
+        1_states_9999999999999_1636480470/286.ivy: line 104: spec.r4 := spec.r3
+
+        1_states_9999999999999_1636480470/286.ivy: line 105: spec.r3 := spec.r2
+
+        1_states_9999999999999_1636480470/286.ivy: line 106: spec.r2 := spec.r1
+
+        1_states_9999999999999_1636480470/286.ivy: line 107: spec.r1 := spec.r0
+
+    }
+
+}
+
+err_flag := false
+
+call ext:producer.pro4
+
+{
+    1_states_9999999999999_1636480470/286.ivy: line 137: valid := true
+
+    [
+        valid = true
+    ]
+    1_states_9999999999999_1636480470/286.ivy: line 138: call spec.trail
+    {
+        1_states_9999999999999_1636480470/286.ivy: line 64: spec.v0 := valid
+
+        [
+            spec.v0 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 65: spec.d0 := done
+
+        1_states_9999999999999_1636480470/286.ivy: line 66: spec.a0 := ack
+
+        1_states_9999999999999_1636480470/286.ivy: line 67: spec.r0 := rdy
+
+        1_states_9999999999999_1636480470/286.ivy: line 69: spec.v9 := spec.v8
+
+        1_states_9999999999999_1636480470/286.ivy: line 70: spec.v8 := spec.v7
+
+        1_states_9999999999999_1636480470/286.ivy: line 71: spec.v7 := spec.v6
+
+        1_states_9999999999999_1636480470/286.ivy: line 72: spec.v6 := spec.v5
+
+        1_states_9999999999999_1636480470/286.ivy: line 73: spec.v5 := spec.v4
+
+        1_states_9999999999999_1636480470/286.ivy: line 74: spec.v4 := spec.v3
+
+        1_states_9999999999999_1636480470/286.ivy: line 75: spec.v3 := spec.v2
+
+        1_states_9999999999999_1636480470/286.ivy: line 76: spec.v2 := spec.v1
+
+        1_states_9999999999999_1636480470/286.ivy: line 77: spec.v1 := spec.v0
+
+        [
+            spec.v1 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 79: spec.d9 := spec.d8
+
+        1_states_9999999999999_1636480470/286.ivy: line 80: spec.d8 := spec.d7
+
+        1_states_9999999999999_1636480470/286.ivy: line 81: spec.d7 := spec.d6
+
+        1_states_9999999999999_1636480470/286.ivy: line 82: spec.d6 := spec.d5
+
+        [
+            spec.d6 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 83: spec.d5 := spec.d4
+
+        [
+            spec.d5 = false
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 84: spec.d4 := spec.d3
+
+        1_states_9999999999999_1636480470/286.ivy: line 85: spec.d3 := spec.d2
+
+        1_states_9999999999999_1636480470/286.ivy: line 86: spec.d2 := spec.d1
+
+        [
+            spec.d2 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 87: spec.d1 := spec.d0
+
+        1_states_9999999999999_1636480470/286.ivy: line 89: spec.a9 := spec.a8
+
+        1_states_9999999999999_1636480470/286.ivy: line 90: spec.a8 := spec.a7
+
+        1_states_9999999999999_1636480470/286.ivy: line 91: spec.a7 := spec.a6
+
+        1_states_9999999999999_1636480470/286.ivy: line 92: spec.a6 := spec.a5
+
+        1_states_9999999999999_1636480470/286.ivy: line 93: spec.a5 := spec.a4
+
+        1_states_9999999999999_1636480470/286.ivy: line 94: spec.a4 := spec.a3
+
+        1_states_9999999999999_1636480470/286.ivy: line 95: spec.a3 := spec.a2
+
+        1_states_9999999999999_1636480470/286.ivy: line 96: spec.a2 := spec.a1
+
+        1_states_9999999999999_1636480470/286.ivy: line 97: spec.a1 := spec.a0
+
+        1_states_9999999999999_1636480470/286.ivy: line 99: spec.r9 := spec.r8
+
+        1_states_9999999999999_1636480470/286.ivy: line 100: spec.r8 := spec.r7
+
+        1_states_9999999999999_1636480470/286.ivy: line 101: spec.r7 := spec.r6
+
+        1_states_9999999999999_1636480470/286.ivy: line 102: spec.r6 := spec.r5
+
+        1_states_9999999999999_1636480470/286.ivy: line 103: spec.r5 := spec.r4
+
+        1_states_9999999999999_1636480470/286.ivy: line 104: spec.r4 := spec.r3
+
+        1_states_9999999999999_1636480470/286.ivy: line 105: spec.r3 := spec.r2
+
+        1_states_9999999999999_1636480470/286.ivy: line 106: spec.r2 := spec.r1
+
+        1_states_9999999999999_1636480470/286.ivy: line 107: spec.r1 := spec.r0
+
+    }
+
+}
+
+err_flag := false
+
+call ext:sender.sen1
+
+{
+    1_states_9999999999999_1636480470/286.ivy: line 192: rdy := true
+
+    [
+        rdy = true
+    ]
+    1_states_9999999999999_1636480470/286.ivy: line 193: call spec.trail
+    {
+        1_states_9999999999999_1636480470/286.ivy: line 64: spec.v0 := valid
+
+        1_states_9999999999999_1636480470/286.ivy: line 65: spec.d0 := done
+
+        1_states_9999999999999_1636480470/286.ivy: line 66: spec.a0 := ack
+
+        1_states_9999999999999_1636480470/286.ivy: line 67: spec.r0 := rdy
+
+        [
+            spec.r0 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 69: spec.v9 := spec.v8
+
+        1_states_9999999999999_1636480470/286.ivy: line 70: spec.v8 := spec.v7
+
+        1_states_9999999999999_1636480470/286.ivy: line 71: spec.v7 := spec.v6
+
+        1_states_9999999999999_1636480470/286.ivy: line 72: spec.v6 := spec.v5
+
+        1_states_9999999999999_1636480470/286.ivy: line 73: spec.v5 := spec.v4
+
+        1_states_9999999999999_1636480470/286.ivy: line 74: spec.v4 := spec.v3
+
+        1_states_9999999999999_1636480470/286.ivy: line 75: spec.v3 := spec.v2
+
+        1_states_9999999999999_1636480470/286.ivy: line 76: spec.v2 := spec.v1
+
+        [
+            spec.v2 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 77: spec.v1 := spec.v0
+
+        1_states_9999999999999_1636480470/286.ivy: line 79: spec.d9 := spec.d8
+
+        1_states_9999999999999_1636480470/286.ivy: line 80: spec.d8 := spec.d7
+
+        1_states_9999999999999_1636480470/286.ivy: line 81: spec.d7 := spec.d6
+
+        [
+            spec.d7 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 82: spec.d6 := spec.d5
+
+        [
+            spec.d6 = false
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 83: spec.d5 := spec.d4
+
+        1_states_9999999999999_1636480470/286.ivy: line 84: spec.d4 := spec.d3
+
+        1_states_9999999999999_1636480470/286.ivy: line 85: spec.d3 := spec.d2
+
+        [
+            spec.d3 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 86: spec.d2 := spec.d1
+
+        1_states_9999999999999_1636480470/286.ivy: line 87: spec.d1 := spec.d0
+
+        1_states_9999999999999_1636480470/286.ivy: line 89: spec.a9 := spec.a8
+
+        1_states_9999999999999_1636480470/286.ivy: line 90: spec.a8 := spec.a7
+
+        1_states_9999999999999_1636480470/286.ivy: line 91: spec.a7 := spec.a6
+
+        1_states_9999999999999_1636480470/286.ivy: line 92: spec.a6 := spec.a5
+
+        1_states_9999999999999_1636480470/286.ivy: line 93: spec.a5 := spec.a4
+
+        1_states_9999999999999_1636480470/286.ivy: line 94: spec.a4 := spec.a3
+
+        1_states_9999999999999_1636480470/286.ivy: line 95: spec.a3 := spec.a2
+
+        1_states_9999999999999_1636480470/286.ivy: line 96: spec.a2 := spec.a1
+
+        1_states_9999999999999_1636480470/286.ivy: line 97: spec.a1 := spec.a0
+
+        1_states_9999999999999_1636480470/286.ivy: line 99: spec.r9 := spec.r8
+
+        1_states_9999999999999_1636480470/286.ivy: line 100: spec.r8 := spec.r7
+
+        1_states_9999999999999_1636480470/286.ivy: line 101: spec.r7 := spec.r6
+
+        1_states_9999999999999_1636480470/286.ivy: line 102: spec.r6 := spec.r5
+
+        1_states_9999999999999_1636480470/286.ivy: line 103: spec.r5 := spec.r4
+
+        1_states_9999999999999_1636480470/286.ivy: line 104: spec.r4 := spec.r3
+
+        1_states_9999999999999_1636480470/286.ivy: line 105: spec.r3 := spec.r2
+
+        1_states_9999999999999_1636480470/286.ivy: line 106: spec.r2 := spec.r1
+
+        1_states_9999999999999_1636480470/286.ivy: line 107: spec.r1 := spec.r0
+
+        [
+            spec.r1 = true
+        ]
+    }
+
+}
+
+err_flag := false
+
+call ext:reciever.rec4
+
+{
+    1_states_9999999999999_1636480470/286.ivy: line 251: ack := true
+
+    [
+        ack = true
+    ]
+    1_states_9999999999999_1636480470/286.ivy: line 252: call spec.trail
+    {
+        1_states_9999999999999_1636480470/286.ivy: line 64: spec.v0 := valid
+
+        1_states_9999999999999_1636480470/286.ivy: line 65: spec.d0 := done
+
+        1_states_9999999999999_1636480470/286.ivy: line 66: spec.a0 := ack
+
+        [
+            spec.a0 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 67: spec.r0 := rdy
+
+        1_states_9999999999999_1636480470/286.ivy: line 69: spec.v9 := spec.v8
+
+        1_states_9999999999999_1636480470/286.ivy: line 70: spec.v8 := spec.v7
+
+        1_states_9999999999999_1636480470/286.ivy: line 71: spec.v7 := spec.v6
+
+        1_states_9999999999999_1636480470/286.ivy: line 72: spec.v6 := spec.v5
+
+        1_states_9999999999999_1636480470/286.ivy: line 73: spec.v5 := spec.v4
+
+        1_states_9999999999999_1636480470/286.ivy: line 74: spec.v4 := spec.v3
+
+        1_states_9999999999999_1636480470/286.ivy: line 75: spec.v3 := spec.v2
+
+        [
+            spec.v3 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 76: spec.v2 := spec.v1
+
+        1_states_9999999999999_1636480470/286.ivy: line 77: spec.v1 := spec.v0
+
+        1_states_9999999999999_1636480470/286.ivy: line 79: spec.d9 := spec.d8
+
+        1_states_9999999999999_1636480470/286.ivy: line 80: spec.d8 := spec.d7
+
+        [
+            spec.d8 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 81: spec.d7 := spec.d6
+
+        [
+            spec.d7 = false
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 82: spec.d6 := spec.d5
+
+        1_states_9999999999999_1636480470/286.ivy: line 83: spec.d5 := spec.d4
+
+        1_states_9999999999999_1636480470/286.ivy: line 84: spec.d4 := spec.d3
+
+        [
+            spec.d4 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 85: spec.d3 := spec.d2
+
+        1_states_9999999999999_1636480470/286.ivy: line 86: spec.d2 := spec.d1
+
+        1_states_9999999999999_1636480470/286.ivy: line 87: spec.d1 := spec.d0
+
+        1_states_9999999999999_1636480470/286.ivy: line 89: spec.a9 := spec.a8
+
+        1_states_9999999999999_1636480470/286.ivy: line 90: spec.a8 := spec.a7
+
+        1_states_9999999999999_1636480470/286.ivy: line 91: spec.a7 := spec.a6
+
+        1_states_9999999999999_1636480470/286.ivy: line 92: spec.a6 := spec.a5
+
+        1_states_9999999999999_1636480470/286.ivy: line 93: spec.a5 := spec.a4
+
+        1_states_9999999999999_1636480470/286.ivy: line 94: spec.a4 := spec.a3
+
+        1_states_9999999999999_1636480470/286.ivy: line 95: spec.a3 := spec.a2
+
+        1_states_9999999999999_1636480470/286.ivy: line 96: spec.a2 := spec.a1
+
+        1_states_9999999999999_1636480470/286.ivy: line 97: spec.a1 := spec.a0
+
+        [
+            spec.a1 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 99: spec.r9 := spec.r8
+
+        1_states_9999999999999_1636480470/286.ivy: line 100: spec.r8 := spec.r7
+
+        1_states_9999999999999_1636480470/286.ivy: line 101: spec.r7 := spec.r6
+
+        1_states_9999999999999_1636480470/286.ivy: line 102: spec.r6 := spec.r5
+
+        1_states_9999999999999_1636480470/286.ivy: line 103: spec.r5 := spec.r4
+
+        1_states_9999999999999_1636480470/286.ivy: line 104: spec.r4 := spec.r3
+
+        1_states_9999999999999_1636480470/286.ivy: line 105: spec.r3 := spec.r2
+
+        1_states_9999999999999_1636480470/286.ivy: line 106: spec.r2 := spec.r1
+
+        [
+            spec.r2 = true
+        ]
+        1_states_9999999999999_1636480470/286.ivy: line 107: spec.r1 := spec.r0
+
+    }
+
+}
+
+
+--------------------------------------------------------------------------------
+
+********************************************************************************
